@@ -1,0 +1,23 @@
+SOL 103
+CEND
+$ Direct Text Input for Global Case Control Data
+TITLE = STRAIN ENERGY CHECK
+ECHO = NONE
+LINES=50000
+$RESVEC = NO
+GROUNDCHECK(SET=(G,N,F,A),THRESH=1.E-2) = YES
+SUBCASE 1
+$ Subcase name : Strain_Energy_check
+   SUBTITLE=Strain_Energy_check
+   METHOD = 1
+BEGIN BULK
+$ Direct Text Input for Bulk Data
+PARAM    POST    0
+PARAM   PRTMAXIM YES
+EIGRL    1                       10      0
+$------$$------$$------$$------$$------$$------$$------$$------$$------$$------$
+SUPORT        1  123456
+$
+INCLUDE 'sat_checks.bdf'
+$
+ENDDATA

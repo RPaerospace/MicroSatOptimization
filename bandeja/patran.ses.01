@@ -1,0 +1,265 @@
+$# Session file patran.ses.01 started recording at 28-May-19 17:26:33
+$# Build: 25.0.638960 Wed Mar 13 09:21:55 PDT 2019
+$# Recorded by: Patran 2019  (Student Edition)
+uil_file_open.go( "C:\Users\Pablo\Downloads\grupo_8 (1)\grupo_8\bandeja\ba" // @
+"ndeja_3.db" )
+$# Database version 3.20 created by Patran 2019  (Student Edition) 
+$# successfully opened.
+$# Warning reported in application FILE by application Journal
+$#     Journal file C:\Users\Pablo\Downloads\grupo_8 (1)
+$# \grupo_8\bandeja\bandeja_3.db.jou does not exist. No journal file will be 
+$# created.
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: EDU
+$# Patran 2019  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node LAPTOP-AF61T6QG(
+$# f8a2d6cdd0a1) (Windows 6.2 (Build 9200: Service Pack 0)) at 28-May-19 
+$# 17:26:33.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library 
+$# C:\MSC.Software\MSC_Nastran_and_Patran_Student_Editions\20190\Patran\bin\ex
+$# e\loads_browser.dll
+$# PíŸ3€ shared library 'Loads Browser', Version 2019, Revision 3, Patch 0, 
+$# has been loaded for: MSC.Patran.
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_display_mgr.erase(  )
+$# Warning reported from application FEM
+$#     Node 908 4920 have not been equivalenced because they are members of 
+$# Mpc 501 503.
+$# Warning reported from application FEM
+$#     Node 977 4921 have not been equivalenced because they are members of 
+$# Mpc 501 503.
+$# Warning reported from application FEM
+$#     Node 978 4922 have not been equivalenced because they are members of 
+$# Mpc 501 503.
+$# Warning reported from application FEM
+$#     Node 1050 4923 have not been equivalenced because they are members of 
+$# Mpc 501 503.
+$# Warning reported from application FEM
+$#     Node 1051 4924 have not been equivalenced because they are members of 
+$# Mpc 501 503.
+$# Warning reported from application FEM
+$#     Node 1689 5701 have not been equivalenced because they are members of 
+$# Mpc 502 504.
+$# Warning reported from application FEM
+$#     Node 1758 5702 have not been equivalenced because they are members of 
+$# Mpc 502 504.
+$# Warning reported from application FEM
+$#     Node 1759 5703 have not been equivalenced because they are members of 
+$# Mpc 502 504.
+$# Warning reported from application FEM
+$#     Node 1831 5704 have not been equivalenced because they are members of 
+$# Mpc 502 504.
+$# Warning reported from application FEM
+$#     Node 1832 5705 have not been equivalenced because they are members of 
+$# Mpc 502 504.
+REAL fem_equiv_all_x_equivtol_ab
+INTEGER fem_equiv_all_x_segment
+fem_equiv_all_group4( [" "], 0, "", 1, 1, 5E-07, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment )
+$# Warning reported from application FEM
+$#     Node 908 4920 have not been equivalenced because they are members of 
+$# Mpc 501 503.
+$# Warning reported from application FEM
+$#     Node 977 4921 have not been equivalenced because they are members of 
+$# Mpc 501 503.
+$# Warning reported from application FEM
+$#     Node 978 4922 have not been equivalenced because they are members of 
+$# Mpc 501 503.
+$# Warning reported from application FEM
+$#     Node 1050 4923 have not been equivalenced because they are members of 
+$# Mpc 501 503.
+$# Warning reported from application FEM
+$#     Node 1051 4924 have not been equivalenced because they are members of 
+$# Mpc 501 503.
+$# Warning reported from application FEM
+$#     Node 1689 5701 have not been equivalenced because they are members of 
+$# Mpc 502 504.
+$# Warning reported from application FEM
+$#     Node 1758 5702 have not been equivalenced because they are members of 
+$# Mpc 502 504.
+$# Warning reported from application FEM
+$#     Node 1759 5703 have not been equivalenced because they are members of 
+$# Mpc 502 504.
+$# Warning reported from application FEM
+$#     Node 1831 5704 have not been equivalenced because they are members of 
+$# Mpc 502 504.
+$# Warning reported from application FEM
+$#     Node 1832 5705 have not been equivalenced because they are members of 
+$# Mpc 502 504.
+$# Geometric equivalencing completed. 0 nodes deleted.
+ga_view_aa_set( -69.565041, 21.545801, -26.815966 )
+ga_view_aa_set( -93.099548, 23.521076, 0.169911 )
+ga_view_center_set( 0.192431, 0.002752 )
+ga_view_zoom_set( 0.246576 )
+ga_view_center_set( 0.162122, 0.004015 )
+ga_view_zoom_set( 0.179328 )
+ga_view_center_set( 0.140308, 0.004704 )
+ga_view_zoom_set( 0.130420 )
+ga_view_center_set( 0.124444, 0.004871 )
+ga_view_zoom_set( 0.094851 )
+ga_view_center_set( 0.115822, 0.002927 )
+ga_view_zoom_set( 0.068983 )
+ga_view_center_set( 0.109727, 0.001161 )
+ga_view_zoom_set( 0.050169 )
+ga_view_center_set( 0.105423, -0.000317 )
+ga_view_zoom_set( 0.036487 )
+ga_view_center_set( 0.104909, 0.004822 )
+ga_view_zoom_set( 0.050169 )
+ga_view_center_set( 0.104203, 0.011889 )
+ga_view_zoom_set( 0.068983 )
+ga_view_center_set( 0.103231, 0.021604 )
+ga_view_zoom_set( 0.094851 )
+ga_view_center_set( 0.101895, 0.034964 )
+ga_view_zoom_set( 0.130420 )
+ga_view_aa_set( -70.905838, 15.683998, -37.212887 )
+ga_view_center_set( 0.117968, 0.055399 )
+ga_view_zoom_set( 0.179328 )
+ga_view_center_set( 0.140384, 0.083498 )
+ga_view_zoom_set( 0.246576 )
+ga_view_center_set( 0.171207, 0.122134 )
+ga_view_zoom_set( 0.339042 )
+ga_view_center_set( 0.213587, 0.175259 )
+ga_view_zoom_set( 0.466182 )
+ga_view_aa_set( -18.556913, -0.317639, -42.686890 )
+ga_view_center_set( 0.239254, 0.132878 )
+ga_view_zoom_set( 0.339042 )
+ga_view_aa_set( -32.534966, -2.298425, -45.386467 )
+ga_view_center_set( 0.225692, -0.151917 )
+ga_view_aa_set( -1.595111, -6.160728, -46.320198 )
+ga_view_center_set( 0.188397, 0.051508 )
+ga_view_center_set( 0.206630, 0.044128 )
+ga_view_zoom_set( 0.246576 )
+ga_view_center_set( 0.217680, 0.028027 )
+ga_view_zoom_set( 0.179328 )
+ga_view_center_set( 0.224109, 0.010347 )
+ga_view_zoom_set( 0.130420 )
+ga_view_center_set( 0.229286, -0.002011 )
+ga_view_zoom_set( 0.094851 )
+ga_view_center_set( 0.233050, -0.011119 )
+ga_view_zoom_set( 0.068983 )
+ga_view_center_set( 0.235788, -0.017832 )
+ga_view_zoom_set( 0.050169 )
+ga_view_center_set( 0.240413, -0.019695 )
+ga_view_zoom_set( 0.036487 )
+ga_view_center_set( 0.243777, -0.021050 )
+ga_view_zoom_set( 0.026536 )
+ga_view_center_set( 0.246665, -0.021458 )
+ga_view_zoom_set( 0.019299 )
+ga_view_center_set( 0.248765, -0.021754 )
+ga_view_zoom_set( 0.014035 )
+ga_view_center_set( 0.250293, -0.021970 )
+ga_view_zoom_set( 0.010208 )
+ga_view_center_set( 0.249038, -0.021486 )
+ga_view_zoom_set( 0.007424 )
+ga_view_center_set( 0.248125, -0.021135 )
+ga_view_zoom_set( 0.005399 )
+ga_view_center_set( 0.247462, -0.020879 )
+ga_view_zoom_set( 0.003927 )
+ga_view_center_set( 0.247607, -0.020633 )
+ga_view_zoom_set( 0.002856 )
+ga_view_center_set( 0.247713, -0.020453 )
+ga_view_zoom_set( 0.002077 )
+ga_view_center_set( 0.247790, -0.020323 )
+ga_view_zoom_set( 0.001510 )
+ga_view_center_set( 0.247846, -0.020228 )
+ga_view_zoom_set( 0.001099 )
+ga_view_center_set( 0.248122, -0.020110 )
+ga_view_zoom_set( 0.000799 )
+ga_view_center_set( 0.248321, -0.020024 )
+ga_view_zoom_set( 0.000581 )
+ga_view_center_set( 0.248122, -0.020107 )
+ga_view_zoom_set( 0.000799 )
+ga_view_center_set( 0.247847, -0.020217 )
+ga_view_zoom_set( 0.001099 )
+ga_view_center_set( 0.247470, -0.020364 )
+ga_view_zoom_set( 0.001510 )
+ga_view_center_set( 0.246951, -0.020566 )
+ga_view_zoom_set( 0.002077 )
+ga_view_center_set( 0.246238, -0.020844 )
+ga_view_zoom_set( 0.002856 )
+ga_view_center_set( 0.244277, -0.021618 )
+ga_view_zoom_set( 0.004997 )
+ga_view_center_set( 0.240846, -0.023008 )
+ga_view_zoom_set( 0.008746 )
+ga_view_center_set( 0.237643, -0.024209 )
+ga_view_zoom_set( 0.012025 )
+ga_view_center_set( 0.228836, -0.027512 )
+ga_view_zoom_set( 0.021044 )
+ga_view_center_set( 0.221315, -0.030402 )
+ga_view_zoom_set( 0.028936 )
+ga_view_center_set( 0.215252, -0.034375 )
+ga_view_zoom_set( 0.039786 )
+ga_view_center_set( 0.222397, -0.040610 )
+ga_view_zoom_set( 0.054706 )
+ga_view_center_set( 0.232028, -0.049181 )
+ga_view_zoom_set( 0.075221 )
+ga_view_center_set( 0.257985, -0.073019 )
+ga_view_zoom_set( 0.131637 )
+ga_view_center_set( 0.279306, -0.093877 )
+ga_view_zoom_set( 0.181001 )
+ga_view_center_set( 0.271658, -0.120964 )
+ga_view_zoom_set( 0.248877 )
+ga_view_center_set( 0.260704, -0.158207 )
+ga_view_zoom_set( 0.342205 )
+ga_view_center_set( 0.245642, -0.209418 )
+ga_view_zoom_set( 0.470532 )
+ga_view_center_set( 0.224932, -0.279832 )
+ga_view_zoom_set( 0.646982 )
+ga_view_center_set( 0.196455, -0.376651 )
+ga_view_zoom_set( 0.889600 )
+ga_view_center_set( 0.182787, -0.277554 )
+ga_view_zoom_set( 0.646982 )
+ga_view_center_set( 0.172018, -0.205483 )
+ga_view_zoom_set( 0.470532 )
+ga_view_center_set( 0.163583, -0.153068 )
+ga_view_zoom_set( 0.342205 )
+ga_view_center_set( 0.106622, -0.112319 )
+ga_view_zoom_set( 0.248877 )
+ga_view_aa_set( -69.060699, 66.819145, 5.486705 )
+ga_view_center_set( 0.125901, -0.107499 )
+ga_view_zoom_set( 0.342205 )
+ga_view_center_set( 0.152410, -0.101474 )
+ga_view_zoom_set( 0.470532 )
+ga_view_center_set( 0.188859, -0.093190 )
+ga_view_zoom_set( 0.646982 )
+ga_view_center_set( 0.188859, -0.146726 )
+ga_view_zoom_set( 0.889600 )
+ga_view_aa_set( -14.223729, 28.487930, -51.386166 )
+ga_view_center_set( -0.048064, -0.086356 )
+ga_view_zoom_set( 0.646982 )
+ga_view_center_set( -0.220371, -0.042450 )
+ga_view_zoom_set( 0.470532 )
+ga_view_center_set( -0.345686, -0.010519 )
+ga_view_zoom_set( 0.342205 )
+ga_view_center_set( -0.436824, 0.012703 )
+ga_view_zoom_set( 0.248877 )
+ga_view_center_set( -0.503106, 0.029593 )
+ga_view_zoom_set( 0.181001 )
+ga_view_center_set( -0.501194, 0.026087 )
+ga_view_zoom_set( 0.248877 )
+ga_view_center_set( -0.497688, 0.021268 )
+ga_view_zoom_set( 0.342205 )
+ga_view_center_set( -0.491664, 0.014038 )
+ga_view_zoom_set( 0.470532 )
+ga_view_center_set( -0.479238, 0.001612 )
+ga_view_zoom_set( 0.646982 )
+ga_view_center_set( -0.462152, -0.015474 )
+ga_view_zoom_set( 0.889600 )
+ga_view_center_set( -0.437093, -0.038967 )
+ga_view_zoom_set( 1.223200 )
+ga_view_center_set( -0.400483, -0.071270 )
+ga_view_zoom_set( 1.681900 )
+ga_view_center_set( -0.347183, -0.118647 )
+ga_view_zoom_set( 2.312612 )
+ga_view_center_set( -0.273897, -0.183791 )
+ga_view_zoom_set( 3.179842 )
+ga_view_center_set( -0.334969, -0.110504 )
+ga_view_zoom_set( 2.312612 )
+ga_view_center_set( -0.379385, -0.057204 )
+ga_view_zoom_set( 1.681900 )
+ga_view_aa_set( -63.631340, 73.708488, -1.304470 )
+uil_file_close.goquit(  )
+$# Flushing the User Data Manager
+$# Session file patran.ses.01 stopped recording at 28-May-19 17:32:22

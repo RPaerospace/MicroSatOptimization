@@ -1,0 +1,32 @@
+SOL 101
+CEND
+$ Direct Text Input for Global Case Control Data
+TITLE = 1G GRAVITY LOAD CHECK
+ECHO = NONE
+LINES = 50000
+SUBCASE 1
+$ Subcase name : Gravity_Check
+   SUBTITLE=Gravity_Check
+   SPC = 2
+   LOAD = 2
+   DISPLACEMENT(SORT1,REAL)=ALL
+   SPCFORCES(SORT1,REAL)=ALL
+BEGIN BULK
+$ Direct Text Input for Bulk Data
+PARAM    POST    0
+PARAM   PRTMAXIM YES
+SPCADD   2       1
+SPC1     1       123456  1       THRU   8
+$ Loads for Load Case : Gravity_Check
+LOAD     2       1.      1.      1      1.       3      1.       4
+$ Displacement Constraints of Load Set : Foot1
+$ Gravity Loading of Load Set : GravCheckX
+GRAV     1              1.      1.       0.      0.
+$ Gravity Loading of Load Set : GravCheckY
+GRAV     4              1.       0.     1.       0.
+$ Gravity Loading of Load Set : GravCheckZ
+GRAV     3              1.       0.      0.     1.
+$
+INCLUDE 'sat_checks.bdf'
+$
+ENDDATA

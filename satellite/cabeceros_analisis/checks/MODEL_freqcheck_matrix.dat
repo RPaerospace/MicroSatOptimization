@@ -1,0 +1,22 @@
+SOL 103
+CEND
+$ Direct Text Input for Global Case Control Data
+TITLE = RIGID BODY FREQUENCY CHECK
+ECHO = NONE
+RESVEC = NO
+lines = 50000
+SUBCASE 1
+$ Subcase name : Freq_Rigid_Check
+   SUBTITLE=Freq_Rigid_Check
+   METHOD = 1
+   VECTOR(SORT1,REAL)=ALL
+BEGIN BULK
+$ Direct Text Input for Bulk Data
+PARAM    POST    0
+PARAM   PRTMAXIM YES
+EIGRL    1                        7      0
+$ Loads for Load Case : Freq_Rigid_Check
+$
+INCLUDE 'sat_checks.bdf'
+$
+ENDDATA

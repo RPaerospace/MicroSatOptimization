@@ -1,0 +1,63 @@
+$ Direct Text Input for Nastran System Cell Section
+NASTRAN SYSTEM(151)=1
+NASTRAN BUFFSIZE=65537
+NASTRAN DBCFACT=4
+ID MODEL RANDOM Y
+SOL 111
+TIME 1000
+CEND
+AUTOSPC(NOPRINT)=YES
+LINE=50000
+     TITLE = RANDOM VIBRATION MODEL
+     SUBTITLE = RANDOM VIBRATION SPCD METHOD MODEL
+     LABEL = Y-DIRECTION RANDOM INPUT
+     ECHO = NONE 
+     SPC      = 1
+     METHOD   = 1
+     DLOAD    = 10
+     SDAMPING = 20
+     RANDOM = 30
+     FREQ     = 40 
+     SET 99 = 859999
+     SET 102 = 1 THRU 18
+$     STRESS(SORT2,plot,phase,vonmises,rprint,crms)=all
+     ACCELERATION(sort2,punch,phase,psdf,rpunch) = 99
+     FORCES(sort2,print,phase,psdf)=102
+BEGIN BULK
+$
+PARAM,POST,0
+PARAM,RESVEC,YES
+PARAM,PRTMAXIM,YES
+$------$$------$$------$$------$$------$$------$$------$$------$$------$$------$
+SPC1           1  123456  859999
+RLOAD2,10,11,,,12,,ACCE
+SPCD,11,859999,2,9.81
+$
+TABLED1 12                                                    
+        0.      1.      2000.      1.    ENDT
+$------$$------$$------$$------$$------$$------$$------$$------$$------$$------$
+TABDMP1 20      CRIT                                                    
+        0.      0.015    3000.   0.015    ENDT
+$------$$------$$------$$------$$------$$------$$------$$------$$------$$------$
+RANDPS,30,1,1,1.0,0.0,31
+$------$$------$$------$$------$$------$$------$$------$$------$$------$$------$
+TABRND1 31      LOG     LOG
+        20.0     0.0727  2000.0  0.0727  ENDT    
+$------$$------$$------$$------$$------$$------$$------$$------$$------$$------$
+FREQ1,40,20.0,5.0,396
+FREQ4,40,20.,2000.,0.3,5
+$
+EIGRL          1      0.   2100.               0                    
+$ Definition of the node for the SHAKER
+GRID     859999           .3     .3       .2854
+$------$$------$$------$$------$$------$$------$$------$$------$$------$$------$
+$ Multipoint Constraints to join I/Fs to the Shaker
+RBE2     860000  859999  123456  1       2       3       4       5
+         6       7       8      
+$------$$------$$------$$------$$------$$------$$------$$------$$------$$------$
+$ Referenced Coordinate Frames
+$
+INCLUDE 'sat_random.bdf'
+$
+ENDDATA 
+
